@@ -8,11 +8,11 @@
 # Abaixo segue um exemplo de código que você pode ou não utilizar
 valores = input().split()
 
-participante1 = int(valores[0])
-participante2 = int(valores[1])
+horas = int(valores[0])
+velociade = int(valores[1])
 
-media = participante1/participante2
+litros = (horas/12)*velociade
 
-print(f'{media:.2f}')
+print(f'{litros:.3f}')
 
-# TODO:  Calcule a média de cachorros quentes consumidas por participante e imprima o valor com DUAS casas decimais.
+# TODO:  Calcule quantidade de litros necessária para realizar a viagem e imprima com TRÊS dígitos após o ponto decimal
