@@ -117,9 +117,25 @@
 #
 # print(f'Valor de PI: {PI:.2f}')#Vai apresentar no máximo duas casas no final da sequência numérica
 # print(f'Valor de PI: {PI: 10.2f}')#Vai apresentar no máximo 10 casas(Caso não valor, será adicionado espaços em branco) no início da sequência numérica e 2 casas no final dela """
-#
-#
-#
-#
-#
-#
+
+texto = "Python para análise de dados"
+
+#Fatiamaento
+# print(texto[0:10] + '\n')
+# print(texto[:10] + '\n')# :10 = 0:10
+# print(texto[1:10] + '\n')
+
+#Count
+#*OBS: É case sensitive
+print(texto.count("dados"))#Armazenado na apresentação
+
+texto_count = texto.count("dados")#Armazenado na variável
+print(texto_count)
+
+#Replace
+print(texto.replace("análise", "analise"))#Armazenado na apresentação
+
+texto_alterado = texto.replace("análise", "analise")#Armazenado na variável
+print(texto_alterado)
+
+
