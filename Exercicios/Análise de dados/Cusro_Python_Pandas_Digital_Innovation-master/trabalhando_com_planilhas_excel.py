@@ -1,14 +1,13 @@
 #Step ONE - Import library of pandas with alias (pd)
 import pandas as pd
-from openpyxl import Workbook #It's necessáry to run code
 
 #Step TWO - Declarar a variável file_name para receber o diretório(Copy path) do arquivo excel
 # Declarar variável df(Data Frame) para receber os dados variável file_name
-file_name1 = "C:/Users/rodri/OneDrive/Python/Exercicios/Análise de dados/Cusro_Python_Pandas_Digital_Innovation-master/datasets/Aracaju.xlsx"
-file_name2 = "C:/Users/rodri/OneDrive/Python/Exercicios/Análise de dados/Cusro_Python_Pandas_Digital_Innovation-master/datasets/Fortaleza.xlsx"
-file_name3 = "C:/Users/rodri/OneDrive/Python/Exercicios/Análise de dados/Cusro_Python_Pandas_Digital_Innovation-master/datasets/Fortaleza.xlsx"
-file_name4 = "C:/Users/rodri/OneDrive/Python/Exercicios/Análise de dados/Cusro_Python_Pandas_Digital_Innovation-master/datasets/Recife.xlsx"
-file_name5 = "C:/Users/rodri/OneDrive/Python/Exercicios/Análise de dados/Cusro_Python_Pandas_Digital_Innovation-master/datasets/Salvador.xlsx"
+file_name1 = "datasets/Aracaju.xlsx"
+file_name2 = "datasets/Fortaleza.xlsx"
+file_name3 = "datasets/Fortaleza.xlsx"
+file_name4 = "datasets/Recife.xlsx"
+file_name5 = "datasets/Salvador.xlsx"
 
 df1 = pd.read_excel(file_name1, engine="openpyxl")
 df2 = pd.read_excel(file_name2, engine="openpyxl")
