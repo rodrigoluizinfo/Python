@@ -102,11 +102,13 @@ nsmallest = df.nsmallest(3, "Receita")#Worst 3 = 3 piores
 print(nsmallest)
 print("\n")
 
-print("Agrupamento por cidade")
+print("Grouping by city \n"
+      "Agrupamento por cidade")
 print(df.groupby("Cidade")["Receita"].sum())
 print("\n")
 
-print("Ordenando conjunto de dados")
+print("Sorting dataset \n"
+      "Ordenando conjunto de dados")
 print(df.sort_values("Receita", ascending=False).head(10))
 
 
