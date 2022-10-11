@@ -1,5 +1,6 @@
 #Step ONE - Import library of pandas with alias (pd)
 import pandas as pd
+import matplotlib
 
 #Step TWO - Declarar a variável file_name para receber o diretório(Copy path) do arquivo excel
 # Declarar variável df(Data Frame) para receber os dados variável file_name
@@ -81,13 +82,15 @@ df["Trimestre_Venda"] = df["Data"].dt.quarter
 print(df.sample(5))
 print("\n")
 
-df = df.reset_index()
-print("#Showing sales in march 2019 \n"
-      "#Mostrando as vendas em março de 2019")
-df["Vendas_Marco_2019"] = df.loc[(df["Data"].dt.year == 2019) & (df["Data"].dt.month == 3)]
-df = df.set_index("Vendas_Marco_2019")
-print(df.sample(5))
-print("\n")
+# print("#Showing sales in march 2019 \n"
+#       "#Mostrando as vendas em março de 2019")
+# df["Vendas_Marco_2019"] = df.loc[(df["Data"].dt.year == 2019) & (df["Data"].dt.month == 3)]
+# print(df.sample(5))
+# print("\n")
+
+print("Showing value counts [LojaID] \n")
+value_counts = df["LojaID"].value_counts(ascending=False)
+print(value_counts.plot.barh())
 
 
 
