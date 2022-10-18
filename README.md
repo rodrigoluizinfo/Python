@@ -7,3 +7,5 @@
 
 ### I created this repository for documented my studies on programin language python. Actualy the version utilized is 3.7.9, and case will be changed, this documentation will be updated.
 ### The library anaconda was instaled and the IDE used is the pycharm and jupyter notebook.
+
+###Last update (17/10/2022)
